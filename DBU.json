@@ -1,0 +1,33 @@
+{
+    "name": "DBU",
+    "parameters": "a c e f o p u",
+    "reductions": {
+        "a c p": [
+            "a c e p"
+        ]
+    },
+    "antireductions": {
+        "a c e p": [
+            "a c p"
+        ]
+    },
+    "tractable": {
+        "a c e f o p u": true,
+        "e u": true
+    },
+    "intractable": {
+        "e": true,
+        "p": true,
+        "u": true,
+        "a p": true,
+        "c p": true,
+        "c p u": true,
+        "f p u": true,
+        "a e f o p": true,
+        "c e f o p": true,
+        "c o p u": true,
+        "a f o p u": true,
+        "a c e f o": true,
+        "a c f o u": true
+    }
+}
