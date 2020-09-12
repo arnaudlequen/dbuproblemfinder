@@ -75,6 +75,11 @@ class ParameterizedProblem:
             if not self.check_parameters_validity(problem):
                 continue
 
+            if tract_class == Tractability.TRACTABLE:
+                tract_class = self.tractable
+            elif tract_class == Tractability.INTRACTABLE:
+                tract_class = self.intractable
+
             tract_class[problem] = True
 
             if not loop:
@@ -516,8 +521,10 @@ def main():
 
             if len(command) > 1:
                 if command[1] == "tractable":
+                    print("Problem: ", end="")
                     problem.add_problem(Tractability.TRACTABLE)
                 elif command[1] == "intractable":
+                    print("Problem: ", end="")
                     problem.add_problem(Tractability.INTRACTABLE)
                 elif command[1] == "reduction":
                     problem.add_reduction()

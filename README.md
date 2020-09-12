@@ -43,3 +43,8 @@ Solution found:
 -> {a, f, o, p, u}-DBU
 -> {a, f, o, p}-DBU
 ```
+
+
+### Included files
+* DBU.json models the previous state of the art
+* DBU_updated.json is the state of the art, updated with the results shown in our paper

@@ -7,7 +7,7 @@
         ]
     },
     "antireductions": {
-        "o f": [
+        "f o": [
             "f"
         ]
     },
@@ -28,6 +28,9 @@
         "c o p u": true,
         "a f o p u": true,
         "a c e f o": true,
-        "a c f o u": true
+        "a c f o u": true,
+        "a c e f o p": true,
+        "c f o p u": true,
+        "a c o p u": true
     }
 }
